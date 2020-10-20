@@ -79,7 +79,29 @@
 	  nextEl: '.banner-button-next',
 	  prevEl: '.banner-button-prev',
 	},
-  });   
+  }); 
+  
+  //team slider activation
+	var swiper = new Swiper('.team-slider', {
+		slidesPerView: 1,
+		spaceBetween: 30,
+		pagination: {
+		  el: '.swiper-pagination',
+		  clickable: true,
+		},
+		navigation: {
+			nextEl: '.team-button-next',
+			prevEl: '.team-button-prev',
+		},
+		breakpoints: {
+			1024: {
+				slidesPerView: 3,
+			},
+			575: {
+				slidesPerView: 2,
+			},
+		}
+	});
 
 
 	// scroll up start here

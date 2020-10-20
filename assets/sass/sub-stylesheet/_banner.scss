@@ -132,3 +132,62 @@
     }
 }
 /*====== banner area css ends  ======*/
+
+//?======= page-header css start ======?//
+.page-header {
+    position: relative;    
+    min-height: 450px;
+    background-size: cover;
+    background-position: center;
+    background: url(../../assets/images/banner/bg_4.jpg)repeat;
+    .p-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        opacity: 1;
+        background: $overlay;
+    }
+    .fx-bg {
+        background: #007BC3;
+        background: -moz-linear-gradient(135deg, #314755, #26a0da);
+        background: -webkit-linear-gradient(135deg, #314755, #26a0da);
+        background: linear-gradient(135deg, #314755, #26a0da);
+    }
+    .page-fluid {
+        @extend %absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        .page-header-content {
+            h2 {
+                margin: 0;
+                color: $white-color;
+            }
+            ul.page-menu {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                @extend %flex;
+                justify-content: center;
+                align-items: center;
+                li {
+                    margin: 0 5px;
+                    span {
+                        color: $white-color;
+                        font-weight: 900;
+                    }
+                    a {
+                        color: $white-color
+                    }
+                }
+            }
+        }
+    }
+    &.style-two {
+        background-image: url(../../assets/images/banner/bg_1.png);
+    }
+}
+//?======= page-header css ends  ======?//

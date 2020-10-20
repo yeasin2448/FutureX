@@ -82,6 +82,14 @@ header {
                             list-style: none;
                             margin: 0 5px;
                             position: relative;
+                            &.active {
+                                a {
+                                    color: #000;
+                                    @include breakpoint (lg) {
+                                        color: $theme-color;
+                                    }
+                                }
+                            }
                             &:hover {
                                a {
                                 color: $theme-color;
