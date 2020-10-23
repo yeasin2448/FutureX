@@ -56,13 +56,16 @@ header {
                     @include breakpoint (max-lg) {
                         position: absolute;
                         top: 0;
-                        width: 300px;
+                        width: 200px;
                         height: calc(100vh - 0px);
                         left: -300px;
                         z-index: 9;
                         overflow-y: scroll;
                         background-color: $theme-color;
                         transition: all 0.3s ease-in-out;
+                    }
+                    @include breakpoint (sm) {
+                        width: 300px;
                     }
                     &.open {
                         left: 0;

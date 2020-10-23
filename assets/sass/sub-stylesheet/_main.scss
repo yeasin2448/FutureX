@@ -116,13 +116,314 @@
 //*===== feature css Ends ===*//
 
 //*==== right sidebar css ====*//
+
 .right-sidebar {
-    padding: $common-padding;
-    .panel-thumb {
-        img {
-            width: 100%;
+        padding: $common-padding;
+        /*---col-4 css--*/
+        .blog-form{
+            padding: 30px;
+            position: relative;
+            background: $white-color;
+            box-shadow: 0 0 20px rgba(136, 136, 136, 0.20);
+            @include breakpoint (max-lg) {
+                margin-top: 30px;
+            }
+            input.Search-box{
+                margin: 0;
+                color: #abb2b9;
+                height: 50px;
+                width: 100%;
+                padding-left: 8px;
+                font-weight: normal;
+                border: none;
+                border-radius: 4px;
+                background-color: #f4f5f6;
+                &::placeholder {
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                }
+            }
+            .search-icon{
+                position: absolute;
+                top: 40%;
+                right: 50px;
+                cursor: pointer;
+            }
         }
-    }
+        .categories-area{
+            width: 100%;
+            padding: 30px 0 30px 0;
+            .blog-categories{
+                background: $white-color;
+                padding: 30px 30px 15px 30px;
+                border-radius: 3px;
+                overflow: hidden;
+                &.blog-padd{
+                    box-shadow: 0 0 20px rgba(136, 136, 136, 0.20);
+                }
+                h5{
+                    padding-bottom: 20px;
+                    margin: 0;
+                    border-bottom: 1px solid #f6f9fb;
+                    text-transform: uppercase;
+                }
+                ul.categories{
+                    padding: 0;
+                    margin:0;
+                    margin-top: 20px;
+                    li{
+                        margin: 5px 0;
+                        list-style: none;
+                        font-size: 16px;
+                        font-weight: 400;
+                        @include breakpoint(max-xl){
+                            margin: 0 0;
+                        }
+                    }
+                    a{
+                        color: #000;
+                        font-size: 16px;
+                        @extend %flex;
+                        justify-content: space-between;
+                        align-items: baseline;
+                        text-transform: capitalize;
+                        font-weight: normal;
+                        text-decoration: none;
+                        transition: all ease 0.5s;
+                        &:hover{
+                            color: $theme-color;
+                            & p{
+                                transform: translateX(5px);
+                                color: $theme-color;
+                            }
+                        }
+                        p{
+                            color: #000;
+                            transition: all ease 0.5s;
+                            font-size: 14px;
+                            margin-bottom: 10px;
+                            text-transform: uppercase;
+                            i{
+                                padding-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .post-blog{
+            background: $white-color;
+            box-shadow: 0 0 20px rgba(136, 136, 136, 0.20);
+            .post-content{
+                padding: 40px 30px;
+                h5 {
+                    margin: 0;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #f6f9fb;
+                    text-transform: uppercase;
+                }
+                .content-inner{
+                    width: 100%;
+                    overflow: hidden;
+                    padding: 20px 0;
+                    border-bottom: 1px solid #f6f9fb;
+                    &:last-child {
+                        border-bottom: none;
+                        padding-bottom: 0;
+                    }
+                    @include breakpoint(max-lg){
+                        margin-bottom: 10px;
+                    }
+                    &:hover {
+                        .post-text {
+                            p {
+                                color: $theme-color;
+                            }
+                        }
+                        .post-thumb {
+                            img {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                    .post-text{
+                        width: calc(100% - 100px);
+                        float: left;
+                        p {
+                            margin: 0;
+                            color: #000;
+                            font-weight: 500;
+                            line-height: 22px;
+                            transition: all 0.3s ease-in-out;
+                            @include breakpoint(max-sm){
+                                font-size: 13px;
+                            }
+                        }
+                        span {
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                    .post-thumb{
+                        width: 80px;
+                        float: left;
+                        margin-left: 15px;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 70px;
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+        .instagram-blog{
+            background: $white-color;
+            box-shadow: 0 0 20px rgba(136, 136, 136, 0.20);
+            .instagram-content{
+                padding: 30px 20px 25px 30px;
+                h5 {
+                    margin: 0;
+                    padding-bottom: 20px;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid #f6f9fb;
+                }
+                ul.instagram-thumb{
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                    @extend %flex;
+                    padding-top: 25px;
+                    justify-content: center;
+                    li{
+                        list-style: none;
+                        padding: 0;
+                        height: 75px;
+                        margin-bottom: 10px;
+                        width: calc(100% / 3);
+                        @include breakpoint (max-xl) {
+                            margin: 5px;
+                            margin-bottom: 5px;
+                            width: calc(100% / 4);
+                        }
+                        @include breakpoint(max-md){
+                            width: calc(100% / 5);
+                        }
+                        @include breakpoint (max-sm) {
+                            width: calc(100% / 5)
+                        }
+                        @include breakpoint(max-mobile){
+                            width: calc(100% / 3);
+                        }
+                    }
+                    a{
+                        height: 100%;
+                        text-decoration: none;
+                        position: relative;
+                        overflow: hidden;
+                        &:hover {
+                            .img-hover {
+                                transform: scale(1);
+                            }
+                        }
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .img-hover {
+                            @extend %absolute;
+                            width: 100%;
+                            height: 100%;
+                            left: 0;
+                            top: 0;
+                            background: linear-gradient(to right, #d602317d, #ffc221a6);
+                            transform: scale(0);
+                            transition: all 0.3s ease-in-out;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .blog-tag{
+            padding: 30px 0 0 0;
+            .tag-bg{
+                padding: 30px;
+                background-color: $white-color;
+                box-shadow: 0 0 20px rgba(136, 136, 136, 0.20);
+                @include breakpoint(max-lg){
+                    margin-bottom: 40px;
+                }
+                .tag-content{
+                    h5 {
+                        margin: 0;
+                        padding-bottom: 20px;
+                        text-transform: uppercase;
+                        border-bottom: 1px solid #f6f9fb;
+                    }
+                    ul.tag-link{
+                        padding: 0;
+                        margin: 0;
+                        @extend %flex;
+                        justify-content: flex-start;
+                        align-items: baseline;
+                        padding-top: 22px;
+                        li{
+                            list-style: none;
+                            padding: 0;
+                            margin: 5px 6px 5px 0px;
+                            @include breakpoint(max-xl){
+                                margin: 10px 4px 0px 0px;
+                            }
+                        }
+                        a{
+                            color: #000000;
+                            font-size: 16px;
+                            padding: 5.5px 10px;
+                            display: inline-block;
+                            background-color: $white-color;
+                            border: 1px solid #ebebeb;
+                            text-decoration: none; 
+                            transition: all 0.5s ease-in-out;
+                            @include breakpoint(max-md){
+                                padding: 5px 5px;
+                            } 
+                            &:hover {
+                                color: $white-color;
+                                background: $theme-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .add_bnner{
+            margin: 30px 0 30px 0;
+            background: $white-color;
+            box-shadow: 0 0 20px rgba(136, 136, 136, 0.20);
+            .add_banner_inner{
+                padding: 35px;
+                h5 {
+                    margin: 0;
+                    text-transform: uppercase;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #f6f9fb;
+                }
+                .single_thumb{
+                    width: 100%;
+                    padding-top: 25px;
+                    img{
+                        width:100%;
+                    }
+                }
+            }
+        }
+        /*---col-4 css--*/
+    // .panel-thumb {
+    //     img {
+    //         width: 100%;
+    //     }
+    // }
 }
 
 //*===== video testimonial start ====*//
