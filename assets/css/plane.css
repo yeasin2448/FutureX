@@ -419,16 +419,16 @@ header {
       header .header-bg .header-item .header-menu .main-menu {
         position: absolute;
         top: 0;
-        width: 200px;
+        width: 300px;
         height: calc(100vh - 0px);
         left: -300px;
         z-index: 9;
         overflow-y: scroll;
         background-color: #5bbc2e;
         transition: all 0.3s ease-in-out; } }
-    @media (min-width: 576px) {
+    @media (max-width: 575px) {
       header .header-bg .header-item .header-menu .main-menu {
-        width: 300px; } }
+        width: 200px; } }
     header .header-bg .header-item .header-menu .main-menu.open {
       left: 0; }
       header .header-bg .header-item .header-menu .main-menu.open ul.menu-list {
