@@ -956,6 +956,266 @@ footer {
 
 //*===== contact page css ends  =====*//
 
+
+//#==== loging form css start ====#//
+.login-form {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    .log-content {
+      .card {
+          border-radius: 3px;
+        .log-text {
+            padding: 30px;
+            img {
+                margin-left: -50px;
+                padding-bottom: 20px;
+            }
+        }
+        .card-header {
+          .card-title {
+            h4 {
+              margin: 0;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .login-footer {
+        .divider {
+          .divider-text {
+            font-size: 0.9375rem;
+            font-weight: 600;
+            padding: 0 1rem;
+            color: #333;
+            position: relative;
+            display: inline-block;
+            &::after, &::before {
+              content: '';
+              position: absolute;
+              top: 50%;
+              width: 100px;
+              border-top: 1px solid #aaa;
+            }
+            &::before {
+              right: 100%;
+            }
+            &::after {
+              left: 100%;
+            }
+          }
+        }
+      }
+    }
+    &.style-two {
+      .log-content {
+        .flexbox-container {
+          .card {
+            max-width: 350px;
+            margin: 0 auto;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            box-shadow: none !important;
+            .card-content {
+              .card-body {
+                form {
+                  .input-group {
+                    .form-control {
+                      border-radius: 20px;
+                      border: 1px solid #13aae4;
+                      &::placeholder {
+                        color: #13aae4;
+                      }
+                    }
+                    .form-control-position {
+                      i {
+                        color: #13aae4;
+                      }
+                    }
+                    label {
+                      color: #13aae4!important;
+                    }
+                    .text-right {
+                      a.card-link {
+                        color: #13aae4;
+                      }
+                    }
+                  }
+                  button.log-btn {
+                    width: 100%;
+                    border-radius: 20px;
+                    background: #13aae4;
+                  }
+                }
+              }
+            }
+          }
+          .bg-img {
+            background: rgba(0, 0, 0, 0.04) url(../../assets/images/login/log-2.jpg) top left repeat;
+            background-size: cover;
+            top: 0;
+            width: 100%;
+            bottom: 0;
+            min-height: 100vh;
+            text-align: left;
+            z-index: 999;
+            opacity: 1;
+            border-radius: 100% 0 0 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 30px;
+            .log-text {
+              ul.log-menu {
+                @extend %flex;
+                list-style: none;
+                li {
+                  border-radius: 3px;
+                  padding: 5px 20px;
+                  &:nth-child(1) {
+                    margin-right: 15px;
+                  }
+                  &.active {
+                    background: 0#13aae4;
+                  }
+                }
+                a {
+                  color: $white-color;
+                }
+              }
+              h3, p {
+                color: $white-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.style-three {
+      .log-content {
+        .flexbox-container {
+          .white-box {
+            margin: 0 150px 0 200px;
+            max-width: 700px;
+            border-radius: 10px;
+            align-items: center;
+            background: #fff;
+            box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+            .bg-img {
+              background-size: cover;
+              width: 100%;
+              bottom: 0;
+              border-radius: 10px;
+              padding: 80px 30px;
+              background: #0f3f6f;
+              margin: 30px 0;
+              left: -60px;
+              z-index: 999;
+              .log-text {
+                .social-media-list {
+                  margin: 0;
+                  list-style: none;
+                  @extend %flex;
+                  justify-content: center;
+                  li {
+                    margin: 5px;
+                  }
+                  a {
+                    &:hover {
+                      color: $white-color;
+                    }
+                  }
+                }
+              }
+            }
+            .card {
+              .card-content {
+                .card-body {
+                  form {
+                    .input-group {
+                      .form-control {
+                        border-color: #0f3f6f;
+                        &::placeholder {
+                          color: #0f3f6f;
+                        }
+                      }
+                      .form-control-position i {
+                        color: #0f3f6f;
+                      }
+                      .text-right a {
+                        color: #0f3f6f;
+                      }
+                    }
+                    button.log-btn {
+                      width: 100%;
+                      color: $white-color;
+                      background: #0f3f6f;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+.bg-authentication {
+background-color: #EFF2F7;
+}
+  //#==== loging form css ends  ====#//
+
+  //?=== back menu css start ===?//
+.back-menu {
+    h6 {
+      i {
+        -webkit-animation: bounce-down 1.9s infinite;
+        animation: bounce-down 1.9s infinite;
+    }
+  }
+}
+  
+  
+  @-webkit-keyframes bounce-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+  }
+  
+  @keyframes bounce-down {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(20px);
+              transform: translateX(20px);
+    }
+    50% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(5px);
+              transform: translateX(5px);
+    }
+  }
+  //?=== back menu css ends  ===?//
+
 //?==== scroolTop ======?//
 .scrollToTop {
     position: fixed;
