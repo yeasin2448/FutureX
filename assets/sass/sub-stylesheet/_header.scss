@@ -105,7 +105,12 @@ header {
                             }
                             &:last-child {
                                 a {
-                                    padding-right: 0;
+                                    &:hover {
+                                        color: $white-color
+                                    }
+                                    &::after {
+                                        content: none;
+                                    }
                                 }
                             }
                             &::before {

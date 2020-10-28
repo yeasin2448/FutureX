@@ -456,8 +456,10 @@ header {
             right: auto;
             left: 0;
             width: 100%; }
-        header .header-bg .header-item .header-menu .main-menu ul.menu-list li:last-child a {
-          padding-right: 0; }
+        header .header-bg .header-item .header-menu .main-menu ul.menu-list li:last-child a:hover {
+          color: #fff; }
+        header .header-bg .header-item .header-menu .main-menu ul.menu-list li:last-child a::after {
+          content: none; }
         header .header-bg .header-item .header-menu .main-menu ul.menu-list li::before {
           top: 50%;
           left: -10%;
