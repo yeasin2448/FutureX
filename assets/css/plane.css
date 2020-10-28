@@ -456,10 +456,8 @@ header {
             right: auto;
             left: 0;
             width: 100%; }
-        header .header-bg .header-item .header-menu .main-menu ul.menu-list li:last-child a:hover {
-          color: #fff; }
-        header .header-bg .header-item .header-menu .main-menu ul.menu-list li:last-child a::after {
-          content: none; }
+        header .header-bg .header-item .header-menu .main-menu ul.menu-list li:last-child a {
+          padding-right: 0; }
         header .header-bg .header-item .header-menu .main-menu ul.menu-list li::before {
           top: 50%;
           left: -10%;
@@ -751,6 +749,9 @@ header {
           @media (min-width: 1200px) {
             .feature-area .section-wrapper .tab-content .tab-pane .feature-item .feature-content .content-thumb {
               padding-bottom: 0; } }
+          @media (max-width: 425px) {
+            .feature-area .section-wrapper .tab-content .tab-pane .feature-item .feature-content .content-thumb {
+              text-align: center; } }
         .feature-area .section-wrapper .tab-content .tab-pane .feature-item .feature-content ul.content-list {
           margin: 0;
           padding-left: 0;
@@ -1474,36 +1475,6 @@ footer {
 .bg-authentication {
   background-color: #EFF2F7; }
 
-.back-menu h6 i {
-  -webkit-animation: bounce-down 1.9s infinite;
-  animation: bounce-down 1.9s infinite; }
-
-@-webkit-keyframes bounce-down {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(20px);
-    transform: translateX(20px); }
-  50% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px); } }
-@keyframes bounce-down {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(20px);
-    transform: translateX(20px); }
-  50% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateX(5px);
-    transform: translateX(5px); } }
 .scrollToTop {
   position: fixed;
   bottom: -30%;

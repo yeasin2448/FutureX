@@ -83,6 +83,9 @@
                             @include breakpoint (xl) {
                                 padding-bottom: 0;
                             }
+                            @include breakpoint (mobile) {
+                                text-align: center;
+                            }
                         }
                         ul.content-list {                            
                             margin: 0;
@@ -1166,55 +1169,8 @@ footer {
 .bg-authentication {
 background-color: #EFF2F7;
 }
-  //#==== loging form css ends  ====#//
+//#==== loging form css ends  ====#//
 
-  //?=== back menu css start ===?//
-.back-menu {
-    h6 {
-      i {
-        -webkit-animation: bounce-down 1.9s infinite;
-        animation: bounce-down 1.9s infinite;
-    }
-  }
-}
-  
-  
-  @-webkit-keyframes bounce-down {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(20px);
-        transform: translateX(20px);
-    }
-    50% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        opacity: 0;
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-  }
-  
-  @keyframes bounce-down {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(20px);
-              transform: translateX(20px);
-    }
-    50% {
-      opacity: 1;
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      opacity: 0;
-      -webkit-transform: translateX(5px);
-              transform: translateX(5px);
-    }
-  }
-  //?=== back menu css ends  ===?//
 
 //?==== scroolTop ======?//
 .scrollToTop {
