@@ -23,7 +23,13 @@
 		$('body,.main-menu,.mobile-bar').removeClass('close');
 		$('body,.main-menu').removeClass('open');
 		$('body,.main-menu,.overlay').removeClass('active');
-  });
+	});
+	
+	// signup form add
+	$(document).on('click', '.up-btn' , function() {
+		$(".up-btn").toggleClass("open");
+		$(".reg-form").toggleClass("open");
+	});
 
   //tooltip activation
   $(function () {

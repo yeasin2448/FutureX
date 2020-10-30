@@ -163,6 +163,8 @@ button.btn {
     background: #ef7f7f; }
     .btn:hover span, .btn:hover i {
       color: #fff; }
+  .btn i {
+    color: #fff; }
   .btn span {
     font-size: 12px;
     color: #fff;
@@ -299,7 +301,7 @@ form button.custom-btn {
   100% {
     -webkit-transform: scale(1, 1);
     opacity: 0; } }
-header .header-bg .header-item, .banner-area .banner-container .swiper-wrapper .swiper-slide .banner-position, .page-header .page-fluid .page-header-content ul.page-menu, .right-sidebar .categories-area .blog-categories ul.categories a, .right-sidebar .instagram-blog .instagram-content ul.instagram-thumb, .right-sidebar .blog-tag .tag-bg .tag-content ul.tag-link, .working-area .section-wrapper ul.working-bar, .team-area .section-wrapper .team-slider .swiper-wrapper .swiper-slide .team-item .item-text ul.mendia-list, footer .footer-bottom, footer .footer-bottom .footer-media ul.mendia-list, .speakus-area .section-wrapper .speak-item, .login-form.style-two .log-content .flexbox-container .bg-img .log-text ul.log-menu, .login-form.style-three .log-content .flexbox-container .white-box .bg-img .log-text .social-media-list {
+header .header-bg .header-item, .banner-area .banner-container .swiper-wrapper .swiper-slide .banner-position, .page-header .page-fluid .page-header-content ul.page-menu, .right-sidebar .categories-area .blog-categories ul.categories a, .right-sidebar .instagram-blog .instagram-content ul.instagram-thumb, .right-sidebar .blog-tag .tag-bg .tag-content ul.tag-link, .working-area .section-wrapper ul.working-bar, .team-area .section-wrapper .team-slider .swiper-wrapper .swiper-slide .team-item .item-text ul.mendia-list, footer .footer-bottom, footer .footer-bottom .footer-media ul.mendia-list, .speakus-area .section-wrapper .speak-item {
   display: flex;
   flex-wrap: wrap; }
 
@@ -802,6 +804,10 @@ header {
       top: 40%;
       right: 50px;
       cursor: pointer; }
+  .right-sidebar .reg-form {
+    display: none; }
+    .right-sidebar .reg-form.open {
+      display: block; }
   .right-sidebar .categories-area {
     width: 100%;
     padding: 30px 0 30px 0; }
@@ -1350,130 +1356,6 @@ footer {
   .map-wrapper .map iframe {
     height: 100%;
     width: 100%; }
-
-.login-form {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden; }
-  .login-form .log-content .card {
-    border-radius: 3px; }
-    .login-form .log-content .card .log-text {
-      padding: 30px; }
-      .login-form .log-content .card .log-text img {
-        margin-left: -50px;
-        padding-bottom: 20px; }
-    .login-form .log-content .card .card-header .card-title h4 {
-      margin: 0;
-      font-size: 18px; }
-  .login-form .log-content .login-footer .divider .divider-text {
-    font-size: 0.9375rem;
-    font-weight: 600;
-    padding: 0 1rem;
-    color: #333;
-    position: relative;
-    display: inline-block; }
-    .login-form .log-content .login-footer .divider .divider-text::after, .login-form .log-content .login-footer .divider .divider-text::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      width: 100px;
-      border-top: 1px solid #aaa; }
-    .login-form .log-content .login-footer .divider .divider-text::before {
-      right: 100%; }
-    .login-form .log-content .login-footer .divider .divider-text::after {
-      left: 100%; }
-  .login-form.style-two .log-content .flexbox-container .card {
-    max-width: 350px;
-    margin: 0 auto;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    box-shadow: none !important; }
-    .login-form.style-two .log-content .flexbox-container .card .card-content .card-body form .input-group .form-control {
-      border-radius: 20px;
-      border: 1px solid #13aae4; }
-      .login-form.style-two .log-content .flexbox-container .card .card-content .card-body form .input-group .form-control::placeholder {
-        color: #13aae4; }
-    .login-form.style-two .log-content .flexbox-container .card .card-content .card-body form .input-group .form-control-position i {
-      color: #13aae4; }
-    .login-form.style-two .log-content .flexbox-container .card .card-content .card-body form .input-group label {
-      color: #13aae4 !important; }
-    .login-form.style-two .log-content .flexbox-container .card .card-content .card-body form .input-group .text-right a.card-link {
-      color: #13aae4; }
-    .login-form.style-two .log-content .flexbox-container .card .card-content .card-body form button.log-btn {
-      width: 100%;
-      border-radius: 20px;
-      background: #13aae4; }
-  .login-form.style-two .log-content .flexbox-container .bg-img {
-    background: rgba(0, 0, 0, 0.04) url(../../assets/images/login/log-2.jpg) top left repeat;
-    background-size: cover;
-    top: 0;
-    width: 100%;
-    bottom: 0;
-    min-height: 100vh;
-    text-align: left;
-    z-index: 999;
-    opacity: 1;
-    border-radius: 100% 0 0 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 30px; }
-    .login-form.style-two .log-content .flexbox-container .bg-img .log-text ul.log-menu {
-      list-style: none; }
-      .login-form.style-two .log-content .flexbox-container .bg-img .log-text ul.log-menu li {
-        border-radius: 3px;
-        padding: 5px 20px; }
-        .login-form.style-two .log-content .flexbox-container .bg-img .log-text ul.log-menu li:nth-child(1) {
-          margin-right: 15px; }
-        .login-form.style-two .log-content .flexbox-container .bg-img .log-text ul.log-menu li.active {
-          background: 0 #13aae4; }
-      .login-form.style-two .log-content .flexbox-container .bg-img .log-text ul.log-menu a {
-        color: #fff; }
-    .login-form.style-two .log-content .flexbox-container .bg-img .log-text h3, .login-form.style-two .log-content .flexbox-container .bg-img .log-text p {
-      color: #fff; }
-  .login-form.style-three .log-content .flexbox-container .white-box {
-    margin: 0 150px 0 200px;
-    max-width: 700px;
-    border-radius: 10px;
-    align-items: center;
-    background: #fff;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1); }
-    .login-form.style-three .log-content .flexbox-container .white-box .bg-img {
-      background-size: cover;
-      width: 100%;
-      bottom: 0;
-      border-radius: 10px;
-      padding: 80px 30px;
-      background: #0f3f6f;
-      margin: 30px 0;
-      left: -60px;
-      z-index: 999; }
-      .login-form.style-three .log-content .flexbox-container .white-box .bg-img .log-text .social-media-list {
-        margin: 0;
-        list-style: none;
-        justify-content: center; }
-        .login-form.style-three .log-content .flexbox-container .white-box .bg-img .log-text .social-media-list li {
-          margin: 5px; }
-        .login-form.style-three .log-content .flexbox-container .white-box .bg-img .log-text .social-media-list a:hover {
-          color: #fff; }
-    .login-form.style-three .log-content .flexbox-container .white-box .card .card-content .card-body form .input-group .form-control {
-      border-color: #0f3f6f; }
-      .login-form.style-three .log-content .flexbox-container .white-box .card .card-content .card-body form .input-group .form-control::placeholder {
-        color: #0f3f6f; }
-    .login-form.style-three .log-content .flexbox-container .white-box .card .card-content .card-body form .input-group .form-control-position i {
-      color: #0f3f6f; }
-    .login-form.style-three .log-content .flexbox-container .white-box .card .card-content .card-body form .input-group .text-right a {
-      color: #0f3f6f; }
-    .login-form.style-three .log-content .flexbox-container .white-box .card .card-content .card-body form button.log-btn {
-      width: 100%;
-      color: #fff;
-      background: #0f3f6f; }
-
-.bg-authentication {
-  background-color: #EFF2F7; }
 
 .scrollToTop {
   position: fixed;
