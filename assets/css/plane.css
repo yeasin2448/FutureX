@@ -736,8 +736,6 @@ header {
       padding: 15px;
       border: 1px solid #5bbc2e;
       transition: all 0.3s ease-in-out; }
-      .feature-area .section-wrapper .tab-content .tab-pane .feature-item:hover {
-        transform: translateY(-4px); }
       .feature-area .section-wrapper .tab-content .tab-pane .feature-item .item-title h4 {
         margin: 0;
         padding-bottom: 15px; }
@@ -1072,6 +1070,12 @@ header {
     margin-left: 0; }
     .services-area.style-four .section-wrapper .service-content .content-text ul.service-list li {
       display: flex; }
+
+.lone-area {
+  padding: 120px 0; }
+  .lone-area .section-wrapper {
+    max-width: 600px;
+    margin: 0 auto; }
 
 .working-area {
   padding: 120px 0;
